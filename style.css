@@ -1,0 +1,60 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+h1 {
+	text-align: center;
+	padding-top: 5rem;
+	font-size: 4rem;
+	margin-bottom: 15rem;
+}
+table {
+	margin: 8rem 10rem;
+	border: 3px solid;
+}
+td {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+tr:nth-child(3n):not(:last-child) td {
+	border-bottom: 3px solid;
+}
+td:nth-child(3n):not(:last-child) {
+	border-right: 3px solid;
+}
+table input {
+	height: 5rem;
+	width: 5rem;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-size: 2rem;
+}
+.sudoku-1 {
+	display: flex;
+	flex-basis: auto;
+}
+.solve {
+	padding: 2rem 4rem;
+	align-self: flex-start;
+	background-color: green;
+	margin: auto 20rem;
+	font-size: 2rem;
+	outline: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.display {
+	display: none;
+}
+.show {
+	display: block;
+}
