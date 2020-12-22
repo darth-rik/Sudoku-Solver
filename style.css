@@ -11,10 +11,10 @@ h1 {
 	text-align: center;
 	padding-top: 5rem;
 	font-size: 4rem;
-	margin-bottom: 15rem;
+	margin-bottom: 10rem;
 }
 table {
-	margin: 8rem 10rem;
+	margin: 6rem 10rem;
 	border: 3px solid;
 }
 td {
@@ -52,9 +52,36 @@ table input {
 	cursor: pointer;
 }
 
-.display {
-	display: none;
+.text {
+	width: 50%;
+	margin: auto;
+	font-size: 1.7rem;
+	text-align: center;
 }
-.show {
-	display: block;
+
+.clear {
+	padding: 1rem 2rem;
+
+	background-color: rgb(172, 20, 53);
+	margin-top: 2rem;
+	font-size: 2rem;
+	outline: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.display {
+	height: 5rem;
+	width: 5rem;
+	border: none;
+	text-align: center;
+
+	font-size: 2.5rem;
+}
+
+.clear-btn {
+	margin-right: 30rem;
+	display: flex;
+	justify-content: flex-end;
 }

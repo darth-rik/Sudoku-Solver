@@ -15,6 +15,10 @@
 
 	<body>
 		<h1>Sudoku Solver</h1>
+		<div class="text">
+			<h2>Enter numbers on the left board</h2>
+		</div>
+
 		<div class="sudoku-1">
 			<table>
 				<tr>
@@ -279,108 +283,275 @@
 					</td>
 				</tr>
 			</table>
+
 			<button class="solve">Solve!</button>
-			<table class="display">
-				<!--tr>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
+
+			<table>
+				<tr>
+					<td>
+						<h3 class="display" data-column="0" data-row="0"></h3>
+					</td>
+					<td>
+						<h3 class="display" data-column="1" data-row="0"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="2" data-row="0"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="3" data-row="0"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="4" data-row="0"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="5" data-row="0"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="6" data-row="0"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="7" data-row="0"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="8" data-row="0"></h3>
+					</td>
 				</tr>
 				<tr>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
+					<td>
+						<h3 class="display" type="text" data-column="0" data-row="1"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="1" data-row="1"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="2" data-row="1"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="3" data-row="1"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="4" data-row="1"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="5" data-row="1"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="6" data-row="1"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="7" data-row="1"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="8" data-row="1"></h3>
+					</td>
 				</tr>
 				<tr>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
+					<td>
+						<h3 class="display" type="text" data-column="0" data-row="2"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="1" data-row="2"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="2" data-row="2"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="3" data-row="2"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="4" data-row="2"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="5" data-row="2"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="6" data-row="2"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="7" data-row="2"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="8" data-row="2"></h3>
+					</td>
 				</tr>
 				<tr>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
+					<td>
+						<h3 class="display" type="text" data-column="0" data-row="3"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="1" data-row="3"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="2" data-row="3"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="3" data-row="3"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="4" data-row="3"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="5" data-row="3"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="6" data-row="3"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="7" data-row="3"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="8" data-row="3"></h3>
+					</td>
 				</tr>
 				<tr>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
+					<td>
+						<h3 class="display" type="text" data-column="0" data-row="4"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="1" data-row="4"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="2" data-row="4"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="3" data-row="4"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="4" data-row="4"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="5" data-row="4"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="6" data-row="4"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="7" data-row="4"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="8" data-row="4"></h3>
+					</td>
 				</tr>
 				<tr>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
+					<td>
+						<h3 class="display" type="text" data-column="0" data-row="5"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="1" data-row="5"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="2" data-row="5"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="3" data-row="5"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="4" data-row="5"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="5" data-row="5"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="6" data-row="5"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="7" data-row="5"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="8" data-row="5"></h3>
+					</td>
 				</tr>
 				<tr>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
+					<td>
+						<h3 class="display" type="text" data-column="0" data-row="6"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="1" data-row="6"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="2" data-row="6"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="3" data-row="6"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="4" data-row="6"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="5" data-row="6"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="6" data-row="6"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="7" data-row="6"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="8" data-row="6"></h3>
+					</td>
 				</tr>
 				<tr>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
+					<td>
+						<h3 class="display" type="text" data-column="0" data-row="7"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="1" data-row="7"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="2" data-row="7"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="3" data-row="7"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="4" data-row="7"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="5" data-row="7"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="6" data-row="7"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="7" data-row="7"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="8" data-row="7"></h3>
+					</td>
 				</tr>
 				<tr>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-					<td><input type="text" maxlength="1" /></td>
-				</tr>-->
+					<td>
+						<h3 class="display" type="text" data-column="0" data-row="8"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="1" data-row="8"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="2" data-row="8"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="3" data-row="8"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="4" data-row="8"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="5" data-row="8"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="6" data-row="8"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="7" data-row="8"></h3>
+					</td>
+					<td>
+						<h3 class="display" type="text" data-column="8" data-row="8"></h3>
+					</td>
+				</tr>
 			</table>
+		</div>
+		<div class="clear-btn">
+			<button class="clear">Clear</button>
 		</div>
 
 		<script src="index.js"></script>

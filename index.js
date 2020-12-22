@@ -77,49 +77,49 @@ var inputs = document.querySelectorAll("input");
 
 document.querySelector(".solve").addEventListener("click", function (e) {
 	var grid = [];
-	inputs.forEach((item) => {
-		for (var i = 0; i < 9; i++) {
-			grid[i] = [];
-			for (var j = 0; j < 9; j++) {
-				grid[i][j] = 0;
-			}
+	for (var i = 0; i < 9; i++) {
+		grid[i] = [];
+		for (var j = 0; j < 9; j++) {
+			grid[i][j] = 0;
 		}
-		if (item.value) {
+	}
+	inputs.forEach((item) => {
+		if (item.value !== "") {
 			grid[item.dataset.row][item.dataset.column] = parseInt(item.value);
 		}
 		item.value = "";
 	});
-	const solution = sudoku(grid);
+	var solution = sudoku(grid);
 	display(solution);
 });
 
-function display(solved) {
-	document.querySelector(".display").classList.add("show");
-	solved.forEach((el) => {
-		document.querySelector(".display").insertAdjacentHTML(
-			"beforeend",
-			`
-            <tr>
-         <td><input type="text" value=${el[0]} /></td>
-         <td><input type="text" value=${el[1]} /></td>
-         <td><input type="text" value=${el[2]} /></td>
-         <td><input type="text" value=${el[3]} /></td>
-        <td><input type="text" value=${el[4]} /></td>
-        <td><input type="text" value=${el[5]} /></td>
-        <td><input type="text" value=${el[6]} /></td>
-        <td><input type="text" value=${el[7]} /></td>
-        <td><input type="text" value=${el[8]} /></td>
-         </tr>
-        
-       
-        
-       
-        
-        
-        
-        
-        
-        `
-		);
+function display(solvedGrid) {
+	// solved.forEach((el) => {
+	// 	document.querySelector(".display").insertAdjacentHTML(
+	// 		"beforeend",
+	// 		`
+	//         <tr>
+	//      <td><input type="text" value=${el[0]} /></td>
+	//      <td><input type="text" value=${el[1]} /></td>
+	//      <td><input type="text" value=${el[2]} /></td>
+	//      <td><input type="text" value=${el[3]} /></td>
+	//     <td><input type="text" value=${el[4]} /></td>
+	//     <td><input type="text" value=${el[5]} /></td>
+	//     <td><input type="text" value=${el[6]} /></td>
+	//     <td><input type="text" value=${el[7]} /></td>
+	//     <td><input type="text" value=${el[8]} /></td>
+	//      </tr>
+
+	//     `
+	// 	);
+	// });
+	document.querySelectorAll(".display").forEach((item) => {
+		item.textContent = solvedGrid[item.dataset.row][item.dataset.column];
 	});
 }
+
+document.querySelector(".clear").addEventListener("click", function () {
+	document.querySelectorAll(".display").forEach((item) => {
+		item.textContent = "";
+	});
+});
